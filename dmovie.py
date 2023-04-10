@@ -26,6 +26,6 @@ if response.status_code == 200:
         txt_num = tr.select_one("span.txt_num")
         print(f'예매율: {txt_num.text}')
         txt_date = tr.select_one(".txt_info > span.txt_num")
-        print(f'개봉날짜: {txt_date.text}')
+        print(f'개봉날짜:4 {txt_date.text}')
 else:
     print("HTTP 요청 실패")
